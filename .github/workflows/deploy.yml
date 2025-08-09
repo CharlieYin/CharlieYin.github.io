@@ -26,7 +26,7 @@ jobs:
 
       # 如果你用的是 yarn/pnpm，把下面两行换成对应命令
       - run: npm ci
-      - run: npm run build
+      - run: CI=false npm run build
 
       # React SPA：让 404 也回到 index.html，解决刷新 404 问题
       - run: cp build/index.html build/404.html

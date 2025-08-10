@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material"
 import CustomBack from "../../../components/CustomBack"
 import CustomButton from "../../../components/CustomButton"
 import CustomImage from '../../../components/CustomImage'
+import { show } from '../../../store/modules/alertStore'
 import { useNavigate } from "react-router-dom"
 import eventFinder from '../../../assets/projects/event-finder.jpg'
 import search from '../../../assets/projects/event-finder-search.gif'
@@ -11,6 +12,7 @@ import searchMobile from '../../../assets/projects/event-finder-search-mobile.gi
 import detailsMobile from '../../../assets/projects/event-finder-details-mobile.gif'
 import favoritesMobile from '../../../assets/projects/event-finder-favorites-mobile.gif'
 import { useEffect } from "react"
+import { useDispatch } from "react-redux"
 
 
 const EventFinder = () => {
@@ -19,6 +21,11 @@ const EventFinder = () => {
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
+
+    const dispatch = useDispatch();
+    const handleWebsite = () => {
+        dispatch(show({severity: 'warning', content:'The website is not available now!'}))
+    }
 
     return (
         <Box sx={{width: '100%'}}>
@@ -47,7 +54,7 @@ const EventFinder = () => {
                         paddingBottom: '40px'
                     }}
                 >
-                    <CustomButton content='Visit Website' href='https://zeliangyin.com/event-finder'/>
+                    <CustomButton content='Visit Website' alert={true} onClick={handleWebsite}/>
                     <CustomButton content='View Android App Video' href='https://youtu.be/FsaOfsrN_bo?si=o4vy9DOsKcALCdXC' />
                 </Box>
                 <Box sx={{paddingBottom: '60px'}}>

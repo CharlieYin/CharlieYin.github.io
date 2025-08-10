@@ -1,10 +1,10 @@
 import { Box, Typography } from "@mui/material"
 import { useNavigate } from "react-router-dom"
-import CustomAlert from '../../../components/CustomAlert'
 import CustomBack from '../../../components/CustomBack'
 import CustomButton from '../../../components/CustomButton'
 import CustomImage from '../../../components/CustomImage'
-import { useEffect, useRef, useState } from "react"
+import { show } from '../../../store/modules/alertStore'
+import { useEffect } from "react"
 import twistTopia from '../../../assets/projects/twist-topia.jpg'
 import perspectiveToggle from '../../../assets/projects/twist-topia-perspective-toggle.gif'
 import keypon from '../../../assets/projects/twist-topia-keypon.gif'
@@ -12,6 +12,7 @@ import frame from '../../../assets/projects/twist-topia-frame.gif'
 import landmine from '../../../assets/projects/twist-topia-landmine.gif'
 import circuit from '../../../assets/projects/twist-topia-circuit.gif'
 import rotatablePlatform from '../../../assets/projects/twist-topia-rotatable-platform.gif'
+import { useDispatch } from "react-redux"
 
 const TwistTopia = () => {
 
@@ -36,26 +37,14 @@ const TwistTopia = () => {
     }
 
     // Mobile will show alert
-    const [alertShow, setAlertShow] = useState(false)
+    const dispatch = useDispatch();
     const handlePlayMobile = () => {
-        setAlertShow(true)
+        dispatch(show({severity: 'warning', content:'The game is only available on computer!'}))
     }
-    const alertTimeout = useRef()
-    useEffect(()=> {
-        if (alertShow) {
-            clearTimeout(alertTimeout.current)
-            alertTimeout.current = setTimeout(() => {
-                setAlertShow(false)
-            }, 3000)
-        }
-
-        return () => clearTimeout(alertTimeout.current)
-    }, [alertShow])
 
     return (
         <Box sx={{width: '100%'}}>
             <CustomBack onClick={() => navigate('/projects')}/>
-            <CustomAlert severity="warning" alertShow={alertShow} content='The game is only available on computer!'/>
             <Typography variant="h2" gutterBottom sx={{textAlign: 'center'}}>
                 Twist Topia
             </Typography>

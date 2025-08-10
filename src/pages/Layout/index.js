@@ -11,6 +11,7 @@ import bgIndex from '../../assets/background-index.jpg'
 import bgProjects from '../../assets/background-projects.jpg'
 import bgLife from '../../assets/background-life.jpg'
 import bgResume from '../../assets/background-resume.jpg'
+import CustomAlert from "../../components/CustomAlert"
 
 const Layout = () => {
     const navigate = useNavigate()
@@ -172,6 +173,7 @@ const Layout = () => {
             </AppBar>
             
             <Box className='content'>
+                <CustomAlert/>
                 <ThemeProvider theme={theme}>
                     <Outlet />
                 </ThemeProvider>

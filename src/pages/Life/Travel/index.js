@@ -20,7 +20,7 @@ const Travel = () => {
             <Grid xs={10}>
             <ImageList variant="masonry" cols={isSmallScreen ? 1 : 2} gap={10}>
                 <ImageListItem>
-                    <img src={imgTravel} />
+                    <img src={imgTravel} alt="travel"/>
                     <CustomImageListItemBar position='below' title={
                         <ThemeProvider theme={theme}>
                             <Typography variant="h3">
@@ -33,10 +33,10 @@ const Travel = () => {
                     }/>
                 </ImageListItem>
                 <ImageListItem>
-                    <img src={imgGame} />
+                    <img src={imgGame} alt="game"/>
                 </ImageListItem>
                 <ImageListItem>
-                    <img src={imgCook} />
+                    <img src={imgCook} alt="cook"/>
                 </ImageListItem>
             </ImageList>
             </Grid>

@@ -80,7 +80,7 @@ const Layout = () => {
                     </Box>
                     <Box sx={{display:'flex', alignItems:'center'}}>
                         <Link 
-                            href='https://www.linkedin.com/in/zeliang-yin/'
+                            href='https://www.linkedin.com/in/zeliangyin/'
                             target="_blank"
                             rel="noreferrer"
                             sx={{

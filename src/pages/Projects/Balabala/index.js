@@ -41,14 +41,14 @@ const Balabala = () => {
                         paddingBottom: '40px'
                     }}
                 >
-                    Balabala is an online video platform providing everyday's hottest videos with real-time bullet comments.
+                    Balabala is an Android video streaming app with bullet comment (danmaku) system.
                 </Typography>
                 <Box sx={{paddingBottom: '60px'}}>
                     <Typography variant="h4" gutterBottom>
                         Description
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        Balabala is an online video platform. It provides and updates everyday's hottest videos for users. The video player supports real-time bullet comments, known as "danmaku". Comments appear directly on the video screen as it plays, creating a shared viewing experience.
+                        Balabala is a video streaming app. It provides and updates everyday's hottest videos for users. The video player supports real-time bullet comments, known as "danmaku". Comments appear directly on the video screen as it plays, creating a shared viewing experience.
                     </Typography>
                 </Box>
                 <Box sx={{paddingBottom: '60px'}}>
@@ -56,19 +56,16 @@ const Balabala = () => {
                         Responsibilities
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Developed the online video Android app with bullet comment system using <u><b>Java</b></u>, <u><b>Android SDK</b></u>, and some third-party libraries.
+                        ●&nbsp;&nbsp;Developed an Android video streaming app with bullet comment (danmaku) system using <u><b>Java</b></u> and <u><b>Android SDK</b></u>.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
                         ●&nbsp;&nbsp;Implemented the backend with <u><b>Python</b></u> and <u><b>Flask</b></u>, creating RESTful APIs for seamless app functionality.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Established a cloud-based <u><b>MySQL</b></u> database to store video and user information, ensuring efficient content access.
+                        ●&nbsp;&nbsp;Set up the <u><b>MySQL</b></u> database to store video metadata and user information, ensuring reliable content access.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Utilized <u><b>Python</b></u> to retrieve every day's Top 50 videos automatically from Bilibili and update the information in the database.
-                    </Typography>
-                    <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Led a cohesive team of 3, driving effective collaboration and successful app completion through <u><b>GitHub</b></u>.
+                        ●&nbsp;&nbsp;Developed a <u><b>Python</b></u> script to fetch the daily top 50 videos from Bilibili and update the database automatically.
                     </Typography>
                 </Box>
                 <Box sx={{paddingBottom: '60px'}}>
@@ -89,9 +86,6 @@ const Balabala = () => {
                     </Typography>
                     <Typography variant="h6" gutterBottom>
                         ●&nbsp;&nbsp;MySQL
-                    </Typography>
-                    <Typography variant="h6" gutterBottom>
-                        ●&nbsp;&nbsp;GitHub
                     </Typography>
                 </Box>
                 <Box sx={{paddingBottom: '60px'}}>

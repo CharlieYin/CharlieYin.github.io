@@ -76,7 +76,7 @@ const Projects = () => {
             image: imgBalabala,
             title: 'Balabala',
             subtitle: 'Android App',
-            description: 'Online video platform with real-time bullet comment system.',
+            description: 'Android video streaming app with bullet comment (danmaku) system.',
         }
     ]
 

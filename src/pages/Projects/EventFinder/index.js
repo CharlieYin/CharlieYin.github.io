@@ -70,22 +70,19 @@ const EventFinder = () => {
                         Responsibilities
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Developed the event search web application using <u><b>AngularJS</b></u>.
+                        ●&nbsp;&nbsp;Developed an event search web application using <u><b>Angular</b></u>, leveraging HttpClientModule for backend API calls.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Employed HttpClientModule for <u><b>AJAX</b></u> calls to Google Maps, Spotify, Facebook, and Twitter APIs.
+                        ●&nbsp;&nbsp;Implemented a responsive UI with <u><b>Bootstrap</b></u>, ensuring consistent layouts for multiple screen sizes and devices.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Ensured a responsive UI with <u><b>Bootstrap UI</b></u>, adapting the design to various screen sizes.
+                        ●&nbsp;&nbsp;Built a backend with <u><b>Node.js</b></u> and <u><b>Express.js</b></u>, creating RESTful APIs and integrating <b><u>Axios</u></b> for external services.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Engineered a robust backend with <u><b>Node.js</b></u> and <u><b>Express.js</b></u>, creating RESTful APIs and integrating <u><b>Axios</b></u> for API calls to TicketMaster, Spotify, and GoogleGeo.
+                        ●&nbsp;&nbsp;Developed the Android app with <u><b>Java</b></u> and <u><b>Android SDK</b></u>, providing feature parity with the web application.
                     </Typography>
                     <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Developed the Android app by using <u><b>Java</b></u>, <u><b>Android SDK</b></u>, and third-party libraries like Picasso and Volley.
-                    </Typography>
-                    <Typography variant="body1" gutterBottom>
-                        ●&nbsp;&nbsp;Deployed the backend as a service on the <u><b>Google Cloud Platform</b></u> App Engine for scalable and reliable performance.
+                        ●&nbsp;&nbsp;Deployed the backend to <u><b>Google Cloud Platform</b></u> App Engine with auto-scaling for high availability and reliability.
                     </Typography>
                 </Box>
                 <Box sx={{paddingBottom: '60px'}}>
@@ -99,10 +96,10 @@ const EventFinder = () => {
                         ●&nbsp;&nbsp;JavaScript
                     </Typography>
                     <Typography variant="h6" gutterBottom>
-                        ●&nbsp;&nbsp;AngularJS
+                        ●&nbsp;&nbsp;Angular
                     </Typography>
                     <Typography variant="h6" gutterBottom>
-                        ●&nbsp;&nbsp;Bootstrap UI
+                        ●&nbsp;&nbsp;Bootstrap
                     </Typography>
                     <Typography variant="h6" gutterBottom>
                         ●&nbsp;&nbsp;Java

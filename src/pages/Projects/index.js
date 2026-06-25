@@ -82,7 +82,7 @@ const Projects = () => {
 
     return (
         <Grid container size={10} spacing={8} sx={{ paddingBottom: '60px' }}>
-            <Grid size={{xs: 12}} sx={{marginBottom: '-42px'}}>
+            <Grid size={{ xs: 12 }} sx={{ marginBottom: '-42px' }}>
                 <Typography variant="h4">
                     Course Projects
                 </Typography>

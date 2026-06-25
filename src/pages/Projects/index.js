@@ -1,5 +1,5 @@
 import Grid from "@mui/material/Grid2"
-import { Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material"
+import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material"
 import React, { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
 import imgTwistTopia from '../../assets/projects/twist-topia.jpg'
@@ -14,7 +14,7 @@ const CustomCard = (props) => {
     }
 
     return (
-        <Grid size={{xs: 12, md: 6}}>
+        <Grid size={{ xs: 12, md: 6 }}>
             <Card sx={{
                 borderRadius: '10px',
                 backgroundColor: '#27282e',
@@ -30,7 +30,7 @@ const CustomCard = (props) => {
                     {props.item.image && <CardMedia
                         component='img'
                         image={props.item.image}
-                        sx={{aspectRatio: 16/9}}
+                        sx={{ aspectRatio: 16 / 9 }}
                     />}
                     <CardContent>
                         {props.item.title && <Typography variant="h4" gutterBottom>
@@ -51,7 +51,7 @@ const CustomCard = (props) => {
 }
 
 const Projects = () => {
-    
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -81,9 +81,14 @@ const Projects = () => {
     ]
 
     return (
-        <Grid container size={10} spacing={12} sx={{paddingBottom: '60px'}}>
+        <Grid container size={10} spacing={8} sx={{ paddingBottom: '60px' }}>
+            <Grid size={{xs: 12}} sx={{marginBottom: '-42px'}}>
+                <Typography variant="h4">
+                    Course Projects
+                </Typography>
+            </Grid>
             {data.map((item, idx) => (
-                <CustomCard key={idx} item={item}/>
+                <CustomCard key={idx} item={item} />
             ))}
         </Grid>
     )

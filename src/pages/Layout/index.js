@@ -172,7 +172,7 @@ const Layout = () => {
                 </Box>
             </AppBar>
             
-            <Box className='content'>
+            <Box className='content' onClick={() => setDrawerOpen(false)}>
                 <CustomAlert/>
                 <ThemeProvider theme={theme}>
                     <Outlet />

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Layout from "../pages/Layout";
 import { lazy, Suspense } from "react";
 import { Box, CircularProgress } from "@mui/material";
+import MonopolyAssistant from "../pages/Projects/MonopolyAssistant";
 
 const Home = lazy(() => import("../pages/Home"))
 const Projects = lazy(() => import("../pages/Projects"))
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
             {
                 path: 'projects',
                 element: <Suspense fallback={Loading}><Projects /></Suspense>
+            },
+            {
+                path: 'projects/monopoly-assistant',
+                element: <Suspense fallback={Loading}><MonopolyAssistant /></Suspense>
             },
             {
                 path: 'projects/twist-topia',

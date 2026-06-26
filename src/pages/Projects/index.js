@@ -2,6 +2,7 @@ import Grid from "@mui/material/Grid2"
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from "@mui/material"
 import React, { useEffect } from "react"
 import { useNavigate } from "react-router-dom"
+import imgMonopolyAssistant from '../../assets/projects/monopoly-assistant.png'
 import imgTwistTopia from '../../assets/projects/twist-topia.jpg'
 import imgEventFinder from '../../assets/projects/event-finder.jpg'
 import imgBalabala from '../../assets/projects/balabala.jpg'
@@ -56,7 +57,16 @@ const Projects = () => {
         window.scrollTo(0, 0);
     }, []);
 
-    const data = [
+    const petProjects = [
+        {
+            path: '/projects/monopoly-assistant',
+            image: imgMonopolyAssistant,
+            title: 'Monopoly Assistant',
+            description: 'Customize your monopoly board and rules, help you calculate and manage your money.',
+        }
+    ]
+
+    const courseProjects = [
         {
             path: '/projects/event-finder',
             image: imgEventFinder,
@@ -82,12 +92,20 @@ const Projects = () => {
 
     return (
         <Grid container size={10} spacing={8} sx={{ paddingBottom: '60px' }}>
-            <Grid size={{ xs: 12 }} sx={{ marginBottom: '-42px' }}>
+            <Grid size={{ xs: 12 }} sx={{ marginBottom: '-30px' }}>
+                <Typography variant="h4">
+                    Pet Projects
+                </Typography>
+            </Grid>
+            {petProjects.map((item, idx) => (
+                <CustomCard key={idx} item={item} />
+            ))}
+            <Grid size={{ xs: 12 }} sx={{ marginBottom: '-30px' }}>
                 <Typography variant="h4">
                     Course Projects
                 </Typography>
             </Grid>
-            {data.map((item, idx) => (
+            {courseProjects.map((item, idx) => (
                 <CustomCard key={idx} item={item} />
             ))}
         </Grid>
